@@ -1,0 +1,494 @@
+/* @font-face {
+  font-family: 'Modernist';
+  src: url(Sk-Modernist-Regular.otf);
+}
+@font-face {
+  font-family: 'Selino';
+  src: url(Selino-Regular-BF63bcc47b127b4.otf);
+}
+body{
+  background-color: #23201F;
+  color: #e8e8e8;
+}
+.hero{
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo h3{
+  display: inline-block ;
+  font-family: 'Modernist';
+  padding-left: 10px;
+}
+.logo a {
+  color: #ED593E;
+  font-family: 'Modernist';
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #ED593E;
+  padding: 4px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #23201F;
+  margin: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #e8e8e8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: 'Modernist';
+}
+
+.nav-links a:hover {
+  color: #ED593E;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+}
+}
+.hero-typography {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-typography h1 {
+  font-size: 48px;
+  color: #E8E8E8;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue';
+}
+
+.hero-typography h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  margin-bottom: 40px;
+  font-family: 'Modernist';
+}
+.hero-typography p{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Modernist';
+  color: #E8E8E8;
+  margin-bottom: 10px;
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ED593E;
+  color: #E8E8E8;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #E8E8E8;
+  color: #ED593E;
+} */
+
+/* .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+} */
+
+/* @media screen and (max-width: 768px) {
+  .hero-typography {
+    width: 90%;
+  }
+
+  .hero-typography h1 {
+    font-size: 36px;
+  }
+
+  .hero-typography p {
+    font-size: 18px;
+  }
+} */
+
+
+/* .hero {
+  height: 100vh;
+  background-color: #E8E8E8;
+  /* Add hero section styles */
+/* 
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cover-image {
+  height: 300px;
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #ED593E;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #23201F;
+  margin-bottom: 40px;
+}
+
+ */
+/* Global Styles */
+@font-face {
+  font-family: 'Modernist';
+  src: url(Sk-Modernist-Regular.otf);
+}
+@font-face {
+  font-family: 'Selino';
+  src: url(Selino-Regular-BF63bcc47b127b4.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Modernist", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #23201F;
+  color: #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo a {
+  color: #ED593E;
+  border: 2px solid #ED593E;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #E8E8E8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #E8E8E8;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #E8E8E8;
+  text-align: center;
+  background-color: #23201F;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'Selino';
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* About Section Styles */
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #ED593E;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #23201F;
+  margin-bottom: 40px;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+  background-color: #E8E8E8;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  color: #23201F;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  position: relative;
+  margin: 20px;
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.project-overlay h3,
+.project-overlay p {
+  color: #E8E8E8;
+  margin-bottom: 10px;
+}
+
+.project-overlay h3 {
+  font-size: 24px;
+}
+
+.project-overlay p {
+  font-size: 16px;
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-color: #23201F;
+  padding: 100px 0;
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact button {
+  padding: 10px 30px;
+  background-color: #ED593E;
+  color: #E8E8E8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.social-media {
+  margin-top: 40px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #E8E8E8;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger span {
+    width: 35px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project img {
+    width: 250px;
+    height: 160px;
+  }
+
+  .about-content,
+  .contact form {
+    max-width: 400px;
+  }
+}
